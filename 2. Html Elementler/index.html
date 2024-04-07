@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementler</title>
+
+    <style>
+        /* css buraya yazılır. */
+        .divOzellik {
+            width: 100%;
+            height: 400px;
+            background-color: antiquewhite;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p> <!--paragraaf etiketidir.-->
+
+    <!-- !Header etiketleri, h1 den h6 ya kadar gider.-->
+    <h1>h1-En büyük başlık</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6-En küçük başlık</h6>
+
+    <!-- !Biçimlendirme elementleri-->
+
+    <!-- *  1-hr Etiketi : Düz yatay cizgi cizer-->
+    <h2>Html Derleri</h2>
+    <hr>
+    <p>Ders detayları Lorem ipsum dolor sit amet.</p>
+
+    <!-- *  2-br Etiketi : Boşlık bırakır -->
+    <h2>Html Derleri</h2>
+    <br>
+    <p>Ders detayları Lorem ipsum dolor sit amet.</p>
+
+    <!-- *  3-strong Etiketi : Bir yazıyı daha kalın bir hale getiri. -->
+    <h2>Html Derleri</h2>
+    <br>
+    <p><strong>Ders detayları Lorem ipsum dolor sit amet.</strong></p>
+
+    <!-- *  4-i Etiketi : italik yapar -->
+    <h2>Html Derleri</h2>
+    <br>
+    <p><i>Ders detayları Lorem ipsum dolor sit amet.</i></p>
+
+    <!-- *  5-b Etiketi : Bir yazıyı daha kalın bir hale getiri. Strong gibi -->
+    <h2>Html Derleri</h2>
+    <br>
+    <p><b>Ders detayları Lorem ipsum dolor sit amet.</b></p>
+
+    <!-- *  6-mark Etiketi :  üstünüden bir markır cizer. Keçekli kalem gibi -->
+    <h2>Html Derleri</h2>
+    <br>
+    <p><b><mark>Ders detayları Lorem ipsum dolor sit amet.</mark></b></p>
+
+    <!-- *  7  İmg(image) elementleri : resim etiketi- -->
+    <!--   src: Kaynağı veriyorsun -->
+    <!--   alt: Kaynak acılamazsa ne göstereyim  -->
+    <img src="/resimler/indir.png" alt="Türk Bayrağı bulunamadı." width="200" height="500" />
+
+    <!-- *  8  a(image) elementleri : link etiketi -->
+    <!--   target yeni bir sekmede acılsın diye veririz. -->
+    Google'a gitmek içib <a href="https://google.com" target="_blank">Tıklayınız</a>
+    <!--   resime de link özelliği vermek için ; -->
+    <a href="https://google.com"><img src="/resimler/indir.jpg" alt="icon bulunamadı" width="100" height="100"></a>
+
+
+    <!-- * 9 - ol : Ordinay list-->
+    <!--type sayesinde sıralama cinsini değiştirebilirsin-->
+    <ol type="A">
+        <li>Kahve</li>
+        <li>Kola</li>
+    </ol>
+
+    <!-- * 10 - ul : Unordinay list-->
+    <ul>
+        <li>Kahve</li>
+        <li>Meyva suyu</li>
+    </ul>
+
+    <!-- * 11- table : TABLOLAR -->
+    <!--tr etiketi row(satır) demek. td(table data) veri girmek için, th: Tablonun başlığı demek, rowspan(satırları birleştirir)-colspan(sütunları birşeltirir) -->
+    <table border="1">
+        <tr>
+            <th colspan="3">Kişisel Bilgiler</th>
+        </tr>
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+            <th>yaş</th>
+        </tr>
+
+        <tr>
+            <td>Berk</td>
+            <td>Erdoğan</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Bilal</td>
+            <td>Çamur</td>
+            <td>23</td>
+        </tr>
+    </table>
+
+
+    <!-- * 12- div : Düzenlemek için, daha iyi görünsün diye , boyutlarını özgürce oluşturabilrsin, sitenin daha dinamik olmasını sağlar.-->
+
+    <div class="divOzellik">
+        <p>Berk</p>
+    </div>
+
+
+    <!-- * 13- form kullanımı-->
+    <!-- 
+        <input type="text">
+        <input type="password">
+        <input type="email">
+        <input type="checkbox">
+        <input type="radio">
+        <input type="file">
+        <input type="reset">
+        <input type="submit">
+        <input type="w3review" name="w3review" rows="4" cols="50">
+        <textarea type="mesajInput" id="mesajAlan," rows="30" cols="10"></textarea> <br>
+        <select name="" id="">
+            <option value="Çay"></option>
+            <option value="Kahve"></option>
+            <option value="Limanata"></option>
+        </select>
+
+    -->
+    <!--sen gönder butonuna basında action çalışır.  method da verileri get mi post mu yada gizlimi yoksa acık bir şekilde mi yolluyucaz onu söylüyoruz.-->
+
+    <form action="abc.php" method="">
+        Adınız : <input type="text" placeholder="İsminiz">
+        Şifreniz : <input type="password" placeholder="password">
+        email : <input type="email" placeholder="email"><br>
+        kitap okumak <input type="checkbox" id="kitapCheckbox"><br>
+        Spor yapmak <input type="checkbox" id="sporCheckbox"><br>
+        Kadın <input type="radio" name="cinsiyetRaido"><br>
+        Erkek <input type="radio" name="cinsiyetRaido"><br>
+        <select name="" id="">
+            <option value="Çay">Çay</option>
+            <option value="Kahve">Kahve</option>
+            <option value="Limanata">Limanata</option>
+        </select>
+        <input type="file"> <br> <br>
+        <textarea type="mesajInput" id="mesajAlan," rows="30" cols="10"></textarea> <br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Temizle">
+
+    </form>
+
+</body>
+
+</html>
